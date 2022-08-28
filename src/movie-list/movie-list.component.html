@@ -1,0 +1,25 @@
+<div class="container">
+<div class="row">
+    <h2 class="display-4 d-flex justify-content-center">Movies list</h2>
+    <button class="btn btn-success" (click)="routeToNew()" >Add new</button>
+
+        <select class="form-control" [(ngModel)]="selectedSorting">
+            <option value="0">Sort By</option>
+            <option value="1">Year</option>
+            <option value="2">Name</option>
+            </select>
+            <button (click)="sortBy()" class="btn btn-primary">Sort</button>
+
+   
+    <div *ngFor="let movie of movies" class="col-4 mt-3 mb-3">       
+            <movie-item [movie]="movie" (ondelete)="deleteItemHandler($event)" (onWatchedChanged)="refreshList()"></movie-item>      
+    </div>  
+</div>
+<div class="row">
+    <h2 class="display-4 d-flex justify-content-center">Watched list</h2>
+    <div *ngFor="let watched of watched" class="col-4 mt-3 mb-3">
+        <movie-item [movie]="watched" (ondelete)="deleteItemHandler($event)" (onWatchedChanged)="refreshList()" ></movie-item>
+    </div>
+</div>
+
+
