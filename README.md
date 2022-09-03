@@ -1,6 +1,17 @@
 # AngularMovieProject
-
+This is a forntend project. Thtough it I improved my TS, HTML, CSS, BOOTSTRAP and more skills.
+Beyond that, Angular it's my favorite framework to build the client side, And I intend to keep learning and improve my development skills.
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.1.0.
+
+What did I learn from this project: 
+
+- Create components and there relationships.
+- Create services and injecting them to the component.
+- Craete fake db with 'json-server' library to simulate the server-client comunication using httpClient service.
+- Working with Input() and Output() to share data between the parent context and child direvtives or components.
+- Working with EventEmitter to update the UI by the changes.
+- Application routing: navigate, passing parameters.
+
 
 ## Development server
 
